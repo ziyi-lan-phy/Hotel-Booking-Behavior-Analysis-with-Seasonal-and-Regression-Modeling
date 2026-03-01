@@ -162,6 +162,7 @@ df_filtered_0 = df_clean[
 ### 1. Lead Time (Days) [`lead_time.ipynb`](notebooks/lead_time.ipynb)
 
 #### (A) Bubble Plot Visualization
+
 ![lead_time](figures/leadtime_cancel.png)
 
 - Scatter plot: lead time vs. cancellation rate.
@@ -169,6 +170,7 @@ df_filtered_0 = df_clean[
 - After **350 days**, cancellations often 0 or 1 → long-tail noise.
 
 #### (B) 90% Cumulative Booking Method
+
 ![lead_time](figures/leadtime_decay_90p.png)
 
 - Calculated the cumulative sum of bookings by lead time to identify the day covering **90% of total bookings (Day 199)**.
@@ -200,9 +202,13 @@ df_filtered_0 = df_clean[
 | Quadratic  | 0.480      | 0.0025      | 0.341           | 0.0057          | No        |
 
 #### Visualization:
-- Training fit + sliding R²: 
+
+Training fit + sliding R²: 
+
 ![lead_time](figures/leadtime_regression_fit.png)
-- Validation fit: 
+
+Validation fit: 
+
 ![lead_time](figures/leadtime_validation_fit.png)
 
 - **Insight:**
